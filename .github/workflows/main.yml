@@ -64,7 +64,8 @@ jobs:
       - name: Install Rust
         uses: dtolnay/rust-toolchain@stable
         with:
-          toolchain: stable-aarch64-pc-windows-msvc
+          toolchain: stable
+          targets: aarch64-pc-windows-msvc
 
       - name: Setup Node.js Environment
         uses: ./.github/actions/setup-env
